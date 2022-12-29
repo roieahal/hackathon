@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./components/login";
+import Admin from "./components/admin";
+import User from "./components/user";
+import { useContext } from "react";
+import { Data } from "./components/context";
+import Top from "./components/header";
 
 function App() {
+  const { isChecked, setIsChecked, setfileNumber, isStudent, setIsStudent } = useContext(Data);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Top />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        {isStudent === "main" ? <Login /> : ""}
+
+        {isStudent === true ? <User /> : isStudent === false ? <Admin /> : ""}
+      </div>
     </div>
   );
 }

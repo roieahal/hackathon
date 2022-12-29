@@ -1,0 +1,52 @@
+progress{
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: rotate(270deg);
+    -moz-transform-origin: 0 100%;
+    -moz-transform: rotate(270deg);
+    -ms-transform-origin: 0 100%;
+    -ms-transform: rotate(270deg);
+    transform-origin: 0 100%;
+    transform: rotate(270deg);
+    width: 75vh;
+  height: 60px;
+  -webkit-appearance: none;
+    margin-left: 40%;
+    margin-top: 40%;
+    text-align: start;
+    font-size:larger;
+    font-stretch: expanded;
+        font-family:  monospace;
+        font-stretch: semi-expanded;
+    font-weight: 300;
+
+    
+    
+}
+
+  progress[value]::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(119, 115, 115, 0.972) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #ff0000,#1000ff, #359900);
+    border-radius: 4px;
+    background-size: 20px 15px, 100% 100%, 100% 100%;
+  }
+
+
+ -webkit-transform 
+  ::-webkit-progress-inner-element {
+    border-radius: 1px solid rgba(149, 21, 21, 0.495);
+    
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: rgb(195, 185, 185);
+    
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26) inset;
+  }
+
+progress:after {
+    content: attr(value)'%';
+    transform: rotate(90deg);
+
+   
+   
+   
+  }
