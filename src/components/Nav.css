@@ -9,7 +9,7 @@ progress{
     transform: rotate(270deg);
     width: 75vh;
   height: 60px;
-  -webkit-appearance: none;
+    -webkit-appearance: none;
     margin-left: 40%;
     margin-top: 40%;
     text-align: start;
@@ -18,15 +18,18 @@ progress{
         font-family:  monospace;
         font-stretch: semi-expanded;
     font-weight: 300;
+    
 
-    
-    
 }
 
+
+
+
   progress[value]::-webkit-progress-value {
-    background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(119, 115, 115, 0.972) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #ff0000,#1000ff, #359900);
+    background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(119, 115, 115, 0.972) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #0d6efd);
     border-radius: 4px;
     background-size: 20px 15px, 100% 100%, 100% 100%;
+    transition: all 2s;
   }
 
 

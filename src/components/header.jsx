@@ -19,7 +19,7 @@ const Top = () => {
   return (
     <div className="topDiv">
       <img src={MyImage} style={{ width: "12%" }} />
-      <div className="loginDiv">
+      <div className="loginDiv" style={{ fontFamily: "Oregano", fontSize: "500" }}>
         <h2> {name}</h2>
       </div>
 

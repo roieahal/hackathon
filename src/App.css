@@ -20,9 +20,9 @@ outline: 1px solid slategrey;
  
 .userComponent{
   position: fixed;
-  top: 27vh;
-  left: 2vw;
-  height: 68vh;
+  top: 23vh;
+  left: 5vw;
+  height: 67vh;
   width: 30vw;
   background-color: antiquewhite;
   display: flex;
@@ -38,7 +38,7 @@ outline: 1px solid slategrey;
 .adminComponent{
   position: fixed;
   top: 27vh;
-  left: 2vw;
+  left: 5vw;
   height: 60vh;
   width: 30vw;
   background-color: antiquewhite;
@@ -56,7 +56,7 @@ outline: 1px solid slategrey;
 .userComComponent{
   position: fixed;
   top: 57vh;
-  left: 36vw;
+  left: 40vw;
   height: 40vh;
   width: 35vw;
   background-color: antiquewhite;
@@ -86,7 +86,7 @@ outline: 1px solid slategrey;
 .adminComComponent{
   position: fixed;
   top: 16vh;
-  left: 36vw;
+  left: 40vw;
   height: 40vh;
   width: 35vw;
   background-color: antiquewhite;
@@ -109,7 +109,7 @@ outline: 1px solid slategrey;
 .progressBarComponent{
   position: fixed;
   top: 51vh;
-  left: 85vw;
+  left: 86vw;
   height: 60vh;
   width: 30vw;
   display: flex;

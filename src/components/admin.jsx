@@ -68,6 +68,9 @@ const Admin = () => {
         </div>
       </form>
 
+      <div>the group have {fileNumber} files in the project </div>
+      <p>they finished {progress}% </p>
+
       <UserCom />
       <AdminCom />
       <Progressbar />

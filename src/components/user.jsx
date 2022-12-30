@@ -46,7 +46,7 @@ const User = () => {
   };
 
   function handleClick() {
-    window.location.href = "https://www.google.com";
+    window.open("https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/");
   }
 
   return (
@@ -82,11 +82,13 @@ const User = () => {
         <div>The needed file is: {neededFile}</div>
 
         <div>you have {fileNumber} files in your project </div>
-        <p>you finished {progress} </p>
-        {progress === "100%" ? (
-          <button onClick={handleClick} type="button" className="btn btn-danger">
-            Deploy
-          </button>
+        <p>you finished {progress}% </p>
+        {progress >= 100 ? (
+          <div>
+            <button onClick={handleClick} type="button" className="btn btn-danger">
+              Deploy
+            </button>
+          </div>
         ) : (
           ""
         )}
