@@ -25,7 +25,7 @@ const Top = () => {
 
       <button type="button" className="btn btn-secondary" onClick={() => handleChange()}>
         Logout
-      </button>;
+      </button>
     </div>
   );
 };
